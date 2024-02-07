@@ -1,3 +1,5 @@
+import RouterLink from "./router-link"
+
 const LINKS: {
     name: string
     href: string
@@ -12,21 +14,13 @@ export default function Header() {
         <header className="bg-slate-300">
             <div className="max-w-screen-xl px-8 py-4 m-auto flex items-center gap-4">
                 <div className="flex items-center gap-4 mr-auto">
-                    <img
-                        src="/vite.svg"
-                        alt="Vite Logo"
-                        className="w-8 h-8"
-                    />
+                    <img src="/vite.svg" alt="Vite Logo" className="w-8 h-8" />
                     <h3 className="text-2xl font-bold">Vite + React</h3>
                 </div>
                 {LINKS.map(({ name, href }, index) => (
-                    <a
-                        key={index}
-                        href={href}
-                        className="text-xl font-semibold underline-1 hover:underline"
-                    >
+                    <RouterLink key={index} to={href} className="text-md text-black font-semibold">
                         {name}
-                    </a>
+                    </RouterLink>
                 ))}
             </div>
         </header>
