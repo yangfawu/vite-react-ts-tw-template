@@ -1,4 +1,4 @@
-import RouterLink from "@components/router-link"
+import RouterLink from "@/components/router-link"
 
 export default function Page() {
     return (

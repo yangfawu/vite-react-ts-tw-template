@@ -1,4 +1,4 @@
-import BigSpinner from "@components/big-spinner"
+import BigSpinner from "@/components/big-spinner"
 import {
     RouterProvider,
     createBrowserRouter,

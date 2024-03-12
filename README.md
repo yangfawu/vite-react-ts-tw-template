@@ -5,7 +5,7 @@ This is a small template frontend repository that uses Vite, React, TypeScript, 
 ### Setup
 ```bash
 npm install
-npm run dev
+npm start
 ```
 
 ### Features
